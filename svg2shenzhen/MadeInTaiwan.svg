@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="20.0mm"
+   height="4.0mm"
+   viewBox="0 0 20.0 4.0"
+   version="1.1"
+   id="svg12038"
+   inkscape:version="0.92.4 (unknown)"
+   sodipodi:docname="MadeInTaiwan.svg">
+  <defs
+     id="defs12032" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="11.2"
+     inkscape:cx="9.6061697"
+     inkscape:cy="19.866935"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g12632"
+     showgrid="true"
+     inkscape:window-width="1855"
+     inkscape:window-height="1056"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     borderlayer="true">
+    <inkscape:grid
+       spacingx="2.54"
+       spacingy="2.54"
+       empspacing="1"
+       type="xygrid"
+       units="mm"
+       id="grid12614" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata12035">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="g12620"
+     sodipodi:insensitive="true"
+     inkscape:groupmode="layer"
+     inkscape:label="[fixed] BG">
+    <rect
+       id="rect12618"
+       style="stroke:none;fill-opacity:1;fill:#FFFFFF"
+       height="4.0"
+       width="20.0"
+       y="0"
+       x="0" />
+  </g>
+  <g
+     id="g12622"
+     inkscape:groupmode="layer"
+     inkscape:label="Edge.Cuts" />
+  <g
+     id="g12624"
+     inkscape:groupmode="layer"
+     inkscape:label="B.Cu-disabled" />
+  <g
+     id="g12626"
+     inkscape:groupmode="layer"
+     inkscape:label="B.Mask-disabled" />
+  <g
+     id="g12628"
+     inkscape:groupmode="layer"
+     inkscape:label="B.Silk-disabled" />
+  <g
+     id="g12630"
+     inkscape:groupmode="layer"
+     inkscape:label="F.Cu">
+    <g
+       transform="matrix(0.71984947,0,0,0.71984947,-11.52547,-73.319558)"
+       id="g13129">
+      <rect
+         style="opacity:1;fill:#962d2d;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+         id="rect13123"
+         width="25.896065"
+         height="5.2971706"
+         x="16.975779"
+         y="101.98801"
+         ry="0" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.21520805px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="20.238171"
+         y="94.309547"
+         id="text13127"
+         transform="scale(0.88664775,1.1278436)"><tspan
+           sodipodi:role="line"
+           id="tspan13125"
+           x="20.238171"
+           y="94.309547"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Ubuntu Condensed';-inkscape-font-specification:'Ubuntu Condensed, ';fill:#ffffff;stroke:#ffffff;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">MADE IN TAIWAN</tspan></text>
+    </g>
+  </g>
+  <g
+     id="g12632"
+     inkscape:groupmode="layer"
+     inkscape:label="F.Mask-auto">
+    <g
+       id="g16633"
+       transform="matrix(0.71984947,0,0,0.71984947,-11.52547,-73.319558)">
+      <rect
+         ry="0"
+         y="101.98801"
+         x="16.975779"
+         height="5.2971706"
+         width="25.896065"
+         id="rect16627"
+         style="opacity:1;fill:#962d2d;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" />
+      <text
+         transform="scale(0.88664775,1.1278436)"
+         id="text16631"
+         y="94.309547"
+         x="20.238171"
+         style="font-style:normal;font-weight:normal;font-size:4.21520805px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Ubuntu Condensed';-inkscape-font-specification:'Ubuntu Condensed, ';fill:#ffffff;stroke:#ffffff;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none"
+           y="94.309547"
+           x="20.238171"
+           id="tspan16629"
+           sodipodi:role="line">MADE IN TAIWAN</tspan></text>
+    </g>
+  </g>
+  <g
+     id="g12634"
+     inkscape:groupmode="layer"
+     inkscape:label="F.Silk">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.03431511px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.07198495;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="1.5676259"
+       y="2.8799367"
+       id="text64886-0"
+       transform="scale(0.88664775,1.1278436)"><tspan
+         sodipodi:role="line"
+         id="tspan64884-2"
+         x="1.5676259"
+         y="2.8799367"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Ubuntu Condensed';-inkscape-font-specification:'Ubuntu Condensed, ';fill:#000000;stroke:#000000;stroke-width:0.07198495;stroke-miterlimit:4;stroke-dasharray:none">MADE IN TAIWAN</tspan></text>
+  </g>
+  <g
+     id="g12636"
+     inkscape:groupmode="layer"
+     inkscape:label="Drill" />
+</svg>

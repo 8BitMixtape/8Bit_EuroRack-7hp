@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name 8Bit_EuroRack-rescue)(type Legacy)(uri ${KIPRJMOD}/8Bit_EuroRack-rescue.lib)(options "")(descr ""))
+  (lib (name 8Bit_eurorack_special)(type Legacy)(uri ${KIPRJMOD}/8Bit_eurorack_special.lib)(options "")(descr ""))
+)

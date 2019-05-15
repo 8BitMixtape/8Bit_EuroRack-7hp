@@ -1,0 +1,362 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# 8Bit_EuroRack-rescue_JACK_2P
+#
+DEF 8Bit_EuroRack-rescue_JACK_2P J 0 40 Y Y 1 F N
+F0 "J" -350 -200 50 H V C CNN
+F1 "8Bit_EuroRack-rescue_JACK_2P" -150 250 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -450 150 -400 -100 0 1 0 F
+S 300 -150 -400 200 0 1 10 f
+P 3 0 1 0 150 0 300 0 300 0 N
+P 4 0 1 0 0 -100 -50 -50 -100 -100 -100 -100 N
+P 4 0 1 0 0 -100 300 -100 300 -100 300 -100 N
+P 4 0 1 0 50 -50 100 -100 150 -50 150 -50 N
+P 4 0 1 0 150 0 100 0 100 -100 100 -100 N
+P 5 0 1 0 300 150 -250 150 -300 100 -350 150 -350 150 N
+X ~ 1 450 -100 150 L 50 50 1 1 P
+X ~ 2 450 0 150 L 50 50 1 1 P
+X ~ 3 450 150 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# 8Bit_eurorack_special_7805
+#
+DEF 8Bit_eurorack_special_7805 U 0 30 N Y 1 F N
+F0 "U" 150 -196 50 H V C CNN
+F1 "8Bit_eurorack_special_7805" 0 200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS LM7805 LM7812 78L05
+DRAW
+S -200 -150 200 150 0 1 0 N
+X VI 1 -400 50 200 R 40 40 1 1 I
+X GND 2 0 -250 100 U 40 40 1 1 I
+X VO 3 400 50 200 L 40 40 1 1 w
+ENDDRAW
+ENDDEF
+#
+# 8Bit_eurorack_special_ATTINY85-20SU
+#
+DEF 8Bit_eurorack_special_ATTINY85-20SU U 0 40 Y Y 1 F N
+F0 "U" -1150 400 50 H V C CNN
+F1 "8Bit_eurorack_special_ATTINY85-20SU" 1000 -400 50 H V C CNN
+F2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" 950 0 50 H I C CIN
+F3 "" 0 0 50 H I C CNN
+ALIAS ATTINY45-20SU ATTINY85-20SU
+DRAW
+S -1200 350 1200 -350 0 1 10 f
+X PB5(~RESET~/dW/ADC0/PCINT5) 1 -1350 -250 150 R 40 40 1 1 B
+X PB3(XTAL1/CLKI/~OC1B~/ADC3/PCINT3) 2 -1350 -50 150 R 40 40 1 1 B
+X PB4(XTAL2/CLKO/OC1B/ADC2/PCINT4) 3 -1350 -150 150 R 40 40 1 1 B
+X GND 4 1350 -250 150 L 40 40 1 1 W
+X PB0(MOSI/DI/SDA/AIN0/OC0A/~OC1A~/AREF/PCINT0) 5 -1350 250 150 R 40 40 1 1 B
+X PB1(MISO/DO/AIN1/OC0B/OC1A/PCINT1) 6 -1350 150 150 R 40 40 1 1 B
+X PB2(SCK/USCK/SCL/T0/INT0/ADC1/PCINT2) 7 -1350 50 150 R 40 40 1 1 B
+X VCC 8 1350 250 150 L 40 40 1 1 W
+ENDDRAW
+ENDDEF
+#
+# 8Bit_eurorack_special_C
+#
+DEF 8Bit_eurorack_special_C C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "8Bit_eurorack_special_C" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# 8Bit_eurorack_special_CONN_01X01
+#
+DEF 8Bit_eurorack_special_CONN_01X01 J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "8Bit_eurorack_special_CONN_01X01" 100 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Pin_Header_Straight_1X*
+ Pin_Header_Angled_1X*
+ Socket_Strip_Straight_1X*
+ Socket_Strip_Angled_1X*
+$ENDFPLIST
+DRAW
+S -50 5 10 -5 0 1 0 N
+S -50 50 50 -50 0 1 0 N
+X P1 1 -200 0 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# 8Bit_eurorack_special_CONN_01X02
+#
+DEF 8Bit_eurorack_special_CONN_01X02 J 0 40 Y N 1 F N
+F0 "J" 0 150 50 H V C CNN
+F1 "8Bit_eurorack_special_CONN_01X02" 100 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Pin_Header_Straight_1X*
+ Pin_Header_Angled_1X*
+ Socket_Strip_Straight_1X*
+ Socket_Strip_Angled_1X*
+$ENDFPLIST
+DRAW
+S -50 -45 10 -55 0 1 0 N
+S -50 55 10 45 0 1 0 N
+S -50 100 50 -100 0 1 0 N
+X P1 1 -200 50 150 R 50 50 1 1 P
+X P2 2 -200 -50 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# 8Bit_eurorack_special_CONN_01X02_MALE
+#
+DEF 8Bit_eurorack_special_CONN_01X02_MALE J 0 40 Y N 1 F N
+F0 "J" 0 175 50 H V C CNN
+F1 "8Bit_eurorack_special_CONN_01X02_MALE" 0 -200 50 H V C CNN
+F2 "" 0 100 50 H I C CNN
+F3 "" 0 100 50 H I C CNN
+DRAW
+S -100 -75 100 -125 0 1 0 F
+S -100 125 -100 125 0 1 0 N
+S 100 125 -100 75 0 1 0 F
+X 1 1 300 100 200 L 50 50 1 1 P
+X 2 2 300 -100 200 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# 8Bit_eurorack_special_CONN_01X04
+#
+DEF 8Bit_eurorack_special_CONN_01X04 J 0 40 Y N 1 F N
+F0 "J" 0 250 50 H V C CNN
+F1 "8Bit_eurorack_special_CONN_01X04" 100 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Pin_Header_Straight_1X*
+ Pin_Header_Angled_1X*
+ Socket_Strip_Straight_1X*
+ Socket_Strip_Angled_1X*
+$ENDFPLIST
+DRAW
+S -50 -145 10 -155 0 1 0 N
+S -50 -45 10 -55 0 1 0 N
+S -50 55 10 45 0 1 0 N
+S -50 155 10 145 0 1 0 N
+S -50 200 50 -200 0 1 0 N
+X P1 1 -200 150 150 R 50 50 1 1 P
+X P2 2 -200 50 150 R 50 50 1 1 P
+X P3 3 -200 -50 150 R 50 50 1 1 P
+X P4 4 -200 -150 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# 8Bit_eurorack_special_LED
+#
+DEF 8Bit_eurorack_special_LED D 0 40 Y N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "8Bit_eurorack_special_LED" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ LED*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 -50 -50 50 N
+P 2 0 1 0 -50 0 50 0 N
+P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
+P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
+P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# 8Bit_eurorack_special_POT
+#
+DEF 8Bit_eurorack_special_POT RV 0 40 N N 1 F N
+F0 "RV" -175 0 50 V V C CNN
+F1 "8Bit_eurorack_special_POT" -100 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S 40 100 -40 -100 0 1 10 N
+P 2 0 1 0 100 0 60 0 N
+P 3 0 1 0 45 0 90 20 90 -20 F
+X 1 1 0 150 50 D 50 50 1 1 P
+X 2 2 150 0 50 L 50 50 1 1 P
+X 3 3 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# 8Bit_eurorack_special_R
+#
+DEF 8Bit_eurorack_special_R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "8Bit_eurorack_special_R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# 8Bit_eurorack_special_SK6812
+#
+DEF 8Bit_eurorack_special_SK6812 D 0 10 Y Y 1 F N
+F0 "D" 200 225 50 H V R BNN
+F1 "8Bit_eurorack_special_SK6812" 50 -225 50 H V L TNN
+F2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" 50 -300 50 H I L TNN
+F3 "" 100 -375 50 H I L TNN
+$FPLIST
+ LED*SK6812*PLCC*5.0x5.0mm*P3.2mm*
+$ENDFPLIST
+DRAW
+T 0 90 -165 30 0 0 0 RGB Normal 0 C C
+S 200 200 -200 -200 0 1 10 f
+P 2 0 1 0 50 -140 70 -140 N
+P 2 0 1 0 50 -100 70 -100 N
+P 2 0 1 0 185 -140 105 -140 N
+P 3 0 1 0 90 -100 50 -140 50 -120 N
+P 3 0 1 0 90 -60 50 -100 50 -80 N
+P 3 0 1 0 145 -40 145 -140 145 -160 N
+P 4 0 1 0 185 -60 105 -60 145 -140 185 -60 N
+X VSS 1 0 -300 100 U 50 50 1 1 W
+X DIN 2 -300 0 100 R 50 50 1 1 I
+X VDD 3 0 300 100 D 50 50 1 1 W
+X DOUT 4 300 0 100 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# 8Bit_eurorack_special_SW_Push
+#
+DEF 8Bit_eurorack_special_SW_Push SW 0 40 N N 1 F N
+F0 "SW" 50 100 50 H V L CNN
+F1 "8Bit_eurorack_special_SW_Push" 0 -60 50 H V C CNN
+F2 "" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+DRAW
+C -80 0 20 0 1 0 N
+C 80 0 20 0 1 0 N
+P 2 0 1 0 0 50 0 120 N
+P 2 0 1 0 100 50 -100 50 N
+X 1 1 -200 0 100 R 50 50 0 1 P
+X 2 2 200 0 100 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Generic_Conn_01x02
+#
+DEF Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Generic_Conn_01x02" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Generic_Conn_02x05_Odd_Even
+#
+DEF Connector_Generic_Conn_02x05_Odd_Even J 0 40 Y N 1 F N
+F0 "J" 50 300 50 H V C CNN
+F1 "Connector_Generic_Conn_02x05_Odd_Even" 50 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_2x??_*
+$ENDFPLIST
+DRAW
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 205 0 195 1 1 6 N
+S -50 250 150 -250 1 1 10 f
+S 150 -195 100 -205 1 1 6 N
+S 150 -95 100 -105 1 1 6 N
+S 150 5 100 -5 1 1 6 N
+S 150 105 100 95 1 1 6 N
+S 150 205 100 195 1 1 6 N
+X Pin_1 1 -200 200 150 R 50 50 1 1 P
+X Pin_10 10 300 -200 150 L 50 50 1 1 P
+X Pin_2 2 300 200 150 L 50 50 1 1 P
+X Pin_3 3 -200 100 150 R 50 50 1 1 P
+X Pin_4 4 300 100 150 L 50 50 1 1 P
+X Pin_5 5 -200 0 150 R 50 50 1 1 P
+X Pin_6 6 300 0 150 L 50 50 1 1 P
+X Pin_7 7 -200 -100 150 R 50 50 1 1 P
+X Pin_8 8 300 -100 150 L 50 50 1 1 P
+X Pin_9 9 -200 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# power_+3V3
+#
+DEF power_+3V3 #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+3V3" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS +3.3V
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_VCC
+#
+DEF power_VCC #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_VCC" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 75 25 0 1 0 N
+P 2 0 1 0 0 0 0 50 N
+X VCC 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library

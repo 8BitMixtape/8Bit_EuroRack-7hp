@@ -1,0 +1,4 @@
+
+(fp_lib_table
+  (lib (name "8Bit_EuroRack-NEO_7hp_frontplate_01")(type KiCad)(uri "$(KIPRJMOD)/8Bit_EuroRack-NEO_7hp_frontplate_01.pretty")(options "")(descr ""))
+)
