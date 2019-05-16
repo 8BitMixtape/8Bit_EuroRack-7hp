@@ -20,9 +20,9 @@ tapeHeight = 11.5; //
 topThickness = 1.6; 
 
 // define inner volume in mm
-length = 160; 
-width = 35;
-height = 220; // spacer + board + spacer + little extra
+length = 150; 
+width = 22;
+height = 198; // spacer + board + spacer + little extra
 
 thickness = 3; // thickness of material
 
@@ -30,7 +30,7 @@ thickness = 3; // thickness of material
 slots = true; // make slots?
 
 // overlap of top/bottom panels in mm
-overlap = 8;
+overlap = 0;
 // round edge or not (applies only if overlap > 0)
 round_edges = true;
 
