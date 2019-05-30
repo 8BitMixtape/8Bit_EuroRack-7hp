@@ -7,6 +7,7 @@ released under the permissive MIT license
 
 file history
 v1.0 - born
+v2.0 - massive edits by dusjagr
 */
 
 /*********************************************** START OF USER VARIABLES */
@@ -16,21 +17,21 @@ v1.0 - born
 rotate([0, 90, 0]) 3d(); // 3d model
 //laser(); // uncomment for laser cutting
 
-tapeHeight = 11.5; //
-topThickness = 1.6; 
-
 // define inner volume in mm
 length = 150; 
 width = 22;
-height = 198; // spacer + board + spacer + little extra
+height = 235; // spacer + board + spacer + little extra
 
 thickness = 3; // thickness of material
+
+hp = 42;
+moduleScrew = 2.2;
 
 // slots configuration
 slots = true; // make slots?
 
 // overlap of top/bottom panels in mm
-overlap = 0;
+overlap = 3;
 // round edge or not (applies only if overlap > 0)
 round_edges = true;
 
@@ -40,7 +41,7 @@ slot_width_right_left = 5;     // width of slot
 slot_clearance_right_left = 10;  // inset to slot >= 0, add plus or minus 0.1 if last tooth is missing
 num_slots_front_back = 2;       
 slot_width_front_back = 5;
-slot_clearance_front_back = 8;  // inset to slot >= 0, add plus or minus 0.1 if last tooth is missing
+slot_clearance_front_back = 6;  // inset to slot >= 0, add plus or minus 0.1 if last tooth is missing
 
 // t-joints configuration
 t_joints_front = false;
@@ -68,15 +69,15 @@ laser_clearance = 5;
 
 // colors
 col_alpha = 1;
-col_top =  "Peru";
-col_bottom = "Peru";
+col_top =  "DeepPink";
+col_bottom = "DeepPink";
 col_left = "Peru";
 col_right = col_left;
-col_front = "Peru";
+col_front = "Brown";
 col_back = col_front;
 
 // number of fragments for round edges
-$fn = 100;
+$fn = 30;
 
 glitch_corr = 0.1; // visual glitch correction (careful, this will mess with dimensions!)
 
@@ -90,23 +91,6 @@ module 3d() {
     left();
     right();
 
-}
-
-module mixtape(){
-    PCB();
-    parts();
-}
-
-module PCB(){
-color("DarkKhaki") 
-translate ([0,0,tapeHeight+1.6]) linear_extrude(height = 1.6, center = false, convexity = 10, twist = 0) import("mixtape_case_3D_bottom.dxf", convexity=3);
-color("Gold") 
-translate ([0,0,tapeHeight+3.2]) linear_extrude(height = 0.2, center = false, convexity = 10, twist = 0) import("mixtape_case_3D_PCB.dxf", convexity=3);
-
-color("DarkKhaki") 
-translate ([0,0,tapeHeight+2*topThickness]) linear_extrude(height = 1.6, center = false, convexity = 10, twist = 0) import("mixtape_case_3D_PCB_TrapezBoard.dxf", convexity=3);
-color("Gold") 
-translate ([0,0,tapeHeight+3*topThickness]) linear_extrude(height = 0.2, center = false, convexity = 10, twist = 0) import("mixtape_case_3D_PCB_TrapezCircuit.dxf", convexity=3);
 }
 
 
@@ -372,11 +356,20 @@ module right() {
         if (t_joints_top_bottom) {
             t_joints_top_bottom((width+thickness)/2);
         }
+       
         // cutouts
-        color("silver")
-        translate([width/2-0.1,-length/2,height/2]) rotate([0,90,0]) 
-        linear_extrude(thickness*2)
-        import(file = "right_cutout.dxf", layer = "0");
+        //translate([width/2-0.1,-length/2,height/2]) rotate([0,90,0]) linear_extrude(thickness*2) import(file = "right_cutout.dxf", layer = "0");
+        
+       translate([width/2-0.1,0,0]) rotate([0,0,0]) cube([thickness*3, 108+1, hp * 5.08+1], center=true);
+        
+        for (i=[0:hp-1]) 
+        translate([0,128.5/2-3,(hp * 5.08/2)-2.5-i*5.08]) rotate([0,90,0]) cylinder(h=width*2, d=moduleScrew, center=true);
+        for (i=[0:hp-1]) 
+        translate([0,-128.5/2+3,(hp * 5.08/2)-2.5-i*5.08]) rotate([0,90,0]) cylinder(h=width*2, d=moduleScrew, center=true);
+        
+        
+        
+        
     }
 }
 
@@ -464,57 +457,6 @@ module slots_right_left(w) {    // w is for right / left side offset
         for (z = [-height/2 + of : (height-(2.0*of))/(num_slots_right_left-1) : height/2.0 - of])
             translate([w, y, z])
             cube([thickness, thickness, slot_width_right_left], center=true);
-}
-
-
-module parts(){
-    // IC-Socket
-  color("Grey")
-      translate([44,22.5,tapeHeight+2*topThickness]) cube([11,13,4],false);
-    
-  difference(){
-  color("Black")
-      translate([45,23.5,tapeHeight+2*topThickness]) cube([9,11,7],false);
-        
-    translate([49.5,34.5,tapeHeight+2*topThickness+6]) cylinder(h=10, r=1.5, center=false, ,$fn=30);
-    }
-    
-    // NEO-Pixels
-    for (a = [ 0 : 6.3 : 46 ])
-    translate([a,0,0]) NEOpixel();
-    
-    module NEOpixel(){
-    color("White")
-      translate([25.2,52.5,tapeHeight+3*topThickness]) cube([5,5,2],false);
-        
-    color("Deeppink")
-      translate([27.7,55,tapeHeight+3*topThickness]) cylinder(h=2.5, r=2, center=false, ,$fn=30);
-    }
-    
-    // Pots
-    potentiometer();
-    translate ([42,0,0]) potentiometer();
-    
-    module potentiometer(){
-    color("Grey")
-      translate([29,29,tapeHeight+2*topThickness]) cylinder(h=10, r=3.5, center=false, ,$fn=30);
-    
-    color("Deeppink")
-        translate([29,29,tapeHeight+2*topThickness+2]) cylinder(h=12, r1=6, r2=4.5, center=false, ,$fn=30);
-    }
-    
-    // Buttons
-    button();
-    translate ([58,0,0]) button();
-    
-    module button(){
-    color("Grey")
-      translate([17.5,9.8,tapeHeight+2*topThickness]) cube([6,6,3],false);
-        
-    color("Red")
-      translate([20.5,12.8,tapeHeight+2*topThickness]) cylinder(h=5, r=1.5, center=false, ,$fn=30);
-    }
-
 }
 
 
