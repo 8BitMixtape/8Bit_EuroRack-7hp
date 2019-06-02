@@ -7,7 +7,8 @@ released under the permissive MIT license
 
 file history
 v1.0 - born
-v2.0 - massive edits by dusjagr
+v2.0 - edits by dusjagr flip top right chaos
+v2.1 - customized for 42hp eurorack
 */
 
 /*********************************************** START OF USER VARIABLES */
@@ -18,7 +19,7 @@ rotate([0, 90, 0]) 3d(); // 3d model
 //laser(); // uncomment for laser cutting
 
 // define inner volume in mm
-length = 150; 
+length = 155; 
 width = 22;
 height = 235; // spacer + board + spacer + little extra
 
@@ -31,7 +32,7 @@ moduleScrew = 2.2;
 slots = true; // make slots?
 
 // overlap of top/bottom panels in mm
-overlap = 3;
+overlap = 0;
 // round edge or not (applies only if overlap > 0)
 round_edges = true;
 
@@ -360,12 +361,12 @@ module right() {
         // cutouts
         //translate([width/2-0.1,-length/2,height/2]) rotate([0,90,0]) linear_extrude(thickness*2) import(file = "right_cutout.dxf", layer = "0");
         
-       translate([width/2-0.1,0,0]) rotate([0,0,0]) cube([thickness*3, 108+1, hp * 5.08+1], center=true);
+       translate([width/2-0.1,-4,0]) rotate([0,0,0]) cube([thickness*3, 108+1, hp * 5.08+1], center=true);
         
         for (i=[0:hp-1]) 
-        translate([0,128.5/2-3,(hp * 5.08/2)-2.5-i*5.08]) rotate([0,90,0]) cylinder(h=width*2, d=moduleScrew, center=true);
+        translate([0,128.5/2-7,(hp * 5.08/2)-2.5-i*5.08]) rotate([0,90,0]) cylinder(h=width*2, d=moduleScrew, center=true);
         for (i=[0:hp-1]) 
-        translate([0,-128.5/2+3,(hp * 5.08/2)-2.5-i*5.08]) rotate([0,90,0]) cylinder(h=width*2, d=moduleScrew, center=true);
+        translate([0,-128.5/2-1,(hp * 5.08/2)-2.5-i*5.08]) rotate([0,90,0]) cylinder(h=width*2, d=moduleScrew, center=true);
         
         
         
